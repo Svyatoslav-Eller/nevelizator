@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Нэвэлизатор 20!8</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <div class="toolbar">
+        <div class="toolbarItem spacer" id="prelogo"></div>
+        <a href="index.htm" class="generalRef">
+            <div class="toolbarItem" id="logo">Нэвэлизатор 20!8</div>
+        </a>
+        <div class="toolbarItem spacer" id="postlogo"></div>
+        <div class="toolbarItem" id="donate">Поддержэть</div>
+        <a href="https://2018.navalny.com" class="generalRef">
+            <div class="toolbarItem" id="navalny">Нэвэльный 20!8</div>
+        </a>
+        <div class="toolbarItem spacer" id="toolEnd"></div>
+    </div>
+    <div class="filler"></div>
+
+    <div class="content" id="mainContent">
+        <div class="startContentFormBlock" id="startForm">
+            
+            <div class="startContentForm">
+                <div class="formTitle">Нэвэлизатор 20!8</div>
+                <form class="formContent" onsubmit="nevelization()" id="addressForm">
+                    <input type="text" class="textbox" placeholder="Введите адрес сайта" id="siteurl">
+                    <input type="submit" class="clicker" id="formSubmit" value="Нэвэлизовать!">
+                </form>
+                <div class="inProcess" id="inProgress">
+                    <div class="loader">
+                        !
+                    </div>
+                    <div class="processTitle">Нэвэлизуем...</div>
+                </div>
+            </div>
+        </div>
+        <iframe class="guestSite" id="victimSite" src="about:blank" ></iframe>
+    </div>
+</body>
+
+</html>

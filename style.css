@@ -1,0 +1,165 @@
+html, body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.generalRef{
+    color: white;
+    text-decoration: none;
+}
+.toolbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to top, #303030 0%, #A0A0A0 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 3;
+    color: white;
+}
+.toolbarItem, .toolbarItem.spacer {
+    height: 100%;
+    line-height: 40px;
+
+}
+.toolbarItem:hover {
+    background: linear-gradient(to bottom, #202020 0%, #B0B0B0 100%);
+    
+}
+.toolbarItem.spacer:hover {
+    background: linear-gradient(to top, #303030 0%, #A0A0A0 100%);
+}
+#prelogo{
+    width: 50px;
+}
+#postlogo{
+    flex-grow: 2;
+}
+#logo {
+    font: bold 16pt verdana;
+    padding: 0 10px 0 10px;
+    line-height: 40px;
+}
+
+#navalny {
+    font-family: Helvetica;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 0 10px 0 10px;
+    background: #EF0F0F;
+}
+#navalny:hover{
+    background: #FF0F0F;
+}
+#donate {
+    background: #0FCF0F;
+    font-family: Helvetica;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 0 10px 0 10px;
+    margin-right: 5px;
+    cursor: pointer; 
+}
+#donate:hover {
+    background: #0FDF0F;
+}
+#toolEnd {
+    width: 30px;
+}
+.content {
+    display: block;
+    overflow-y: visible;
+    background-color: #B0B0B0;
+    height: calc(100% - 40px);
+}
+.filler{
+    height: 40px;
+    width: 100%;
+}
+.startContentFormBlock {
+    position: relative;
+    top: 25%;
+    
+}
+.startContentForm{
+    background-color: #FAFAFA;
+    margin: auto;
+    text-align: center;
+    width: min-content;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.formTitle{
+    font: bold 20pt verdana;
+    color: #303030;
+    
+}
+.textbox {
+    width: 300px;
+    height: 35px;
+    background-color: #E0E0E0;
+    border: 2px solid #808080;
+    color: black;
+    font-family: Helvetica;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 0 10px 0 10px;
+    border-radius: 3px;
+}
+.clicker{
+    width: 324px;
+    height: 35px;
+    background-color: #0FBF0F;
+    border-radius: 3px;
+    color: black;
+    font-family: Helvetica;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 0 10px 0 10px;
+    color: white;
+}
+.clicker:hover{
+    background-color: #0FCF0F;
+}
+
+#siteurl {
+    margin-top: 20px;
+}
+#formSubmit{
+    margin-top: 20px;
+}
+.guestSite{
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    background-color: white;
+    display: none;
+}
+.inProcess{
+    width: 324px;
+    height: 100px;
+    margin-top: 0px;
+    display: none;
+}
+.processTitle {
+    color: #606060;
+    font-size: 12pt;
+    font-family: helvetica;
+}
+
+@keyframes loader {
+  0% {transform:rotate(0deg)}
+  50%{transform:rotate(180deg)}
+  100%{transform:rotate(360deg)}
+}
+
+.loader {
+    animation: loader 1.5s infinite ease-in-out;
+    color: #EF0F0F;
+    font-size: 52pt;
+    font-family: helvetica;
+    font-weight: bold;
+}
+
