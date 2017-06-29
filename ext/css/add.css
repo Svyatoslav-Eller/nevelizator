@@ -1,0 +1,63 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.NEVELNIYcontent {
+    display: block;
+    overflow-y: visible;
+    background-color: rgba(176, 176, 176, 0.8);
+    height: 100%;
+}
+
+.NEVELNIYstartContentFormBlock {
+    position: relative;
+    top: 40%;
+    
+}
+.NEVELNIYstartContentForm{
+    background-color: #FAFAFA;
+    margin: auto;
+    text-align: center;
+    width: min-content;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.NEVELNIYformTitle{
+    font: bold 20pt verdana;
+    color: #303030;
+    
+}
+
+.NEVELNIYinProcess{
+    width: 324px;
+    height: 100px;
+    margin-top: 0px;
+}
+.NEVELNIYprocessTitle {
+    color: #606060;
+    font-size: 12pt;
+    font-family: helvetica;
+}
+
+@keyframes NEVELNIYloader {
+  0% {transform:rotate(0deg)}
+  50%{transform:rotate(180deg)}
+  100%{transform:rotate(360deg)}
+}
+
+.NEVELNIYloader {
+    animation: NEVELNIYloader 1.5s infinite ease-in-out;
+    color: #EF0F0F;
+    font-size: 52pt;
+    font-family: helvetica;
+    font-weight: bold;
+}
+#NEVELNIYnevelizatorLoader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}

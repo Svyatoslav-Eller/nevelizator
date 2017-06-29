@@ -1,0 +1,112 @@
+html, body {
+    width: 300px;
+    margin: 0;
+    user-select: none;
+}
+.head {
+    height: 40px;
+    background: linear-gradient(to top, #303030 0%, #A0A0A0 100%);
+    color: white;
+    font: bold 16pt verdana;
+    padding: 0 10px 0 10px;
+    line-height: 40px;
+    text-align: center;
+    transition: background-color 0.4s ease 0s;
+}
+.head:hover {
+    background: linear-gradient(to top, #B0B0B0 0%, #202020 100%);
+    transition: background-color 0.4s ease 0s;
+}
+.generalRef{
+    color: white;
+    text-decoration: none;
+}
+.parameter {
+    height: 40px;
+    font: normal 12pt Helvetica;
+    padding: 0 10px 0 10px;
+    line-height: 40px;
+    cursor: default;
+}
+.actionButton {
+    height: 40px;
+    font: normal 12pt Helvetica;
+    padding: 0 10px 0 10px;
+    line-height: 40px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+#navalny {
+    font-family: Helvetica;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 0 10px 0 10px;
+    background: #EF0F0F;
+    transition: background-color 0.4s ease 0s;
+}
+#navalny:hover{
+    background: #FF0F0F;
+    transition: background-color 0.4s ease 0s;
+}
+#donate {
+    background: #0FCF0F;
+    font-family: Helvetica;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 0 10px 0 10px;
+    cursor: pointer; 
+    transition: background-color 0.4s ease 0s;
+}
+#donate:hover {
+    background: #0FDF0F;
+    transition: background-color 0.4s ease 0s;
+}
+
+/*Checkbox*/
+.switch{
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 40px;
+    height: 20px;
+    border-radius: 3px;
+    background: #bbbbbb;
+    transition: background-color 0.4s ease 0s;
+    box-shadow: 0 0 2px #303030;
+    cursor: pointer;
+}
+.switchRoll {
+    position: relative;
+    left: 0%;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    background: #ffffff;
+    transition: left 0.4s ease 0s;
+    box-shadow: 0 0 2px #303030;
+}
+.generalCheckbox {
+    display: none;
+}
+.generalCheckbox:checked +* .switchRoll{
+    left: 20px;
+    transition: left 0.4s ease 0s;
+}
+.generalCheckbox:checked +* .switch{
+    background: #0FDF0F;
+    transition: background-color 0.4s ease 0s;
+}
+#start {
+    font-family: Helvetica;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 0 10px 0 10px;
+    background: #0F0FBF;
+    transition: background-color 0.4s ease 0s;
+
+}
+#start:hover {
+    background: #FF0F2F;
+    transition: background-color 0.4s ease 0s;
+}
